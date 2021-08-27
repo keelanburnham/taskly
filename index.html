@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taskly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/97036accc4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97036accc4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <span class="title">Taskly</span>
+      <span class="title">✔️ Taskly</span>
     </nav>
     <section class="input-area">
-        <div class="task-input-box">
-            <div class="task-input-innerbox">
-                <input type="text" class="task-input-textbox">
-                <i onclick="InfoPopup" class="fas fa-info-circle fa-lg"></i>
-            </div>
+      <div class="task-input-box">
+        <div class="task-input-innerbox">
+          <input
+            type="text"
+            class="task-input-textbox"
+            id="taskInput"
+            autofocus
+          />
+          <i id="btnInfo" class="fas fa-info-circle fa-lg"></i>
         </div>
+      </div>
     </section>
-    <section class="task-list-area">
-        <div class="pt-2">
-            <ul class="task-list">
-                <li class="task">
-                    <div>
-                        Task One
-                    </div>
-                </li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-            </ul>
-        </div>
+    <section class="task-list-area mt-2">
+      <div class="">
+        <ul class="task-list p-1">
+          <li class="task">
+            <input type="checkbox" name="task-1" id="task-1" />
+            <label for="task-1">Task One</label>
+          </li>
+          <li class="task">
+            <input type="checkbox" name="task-2" id="task-2" />
+            <label for="task-2">Task Two</label>
+          </li>
+          <li class="task">
+            <input type="checkbox" name="task-3" id="task-3" />
+            <label for="task-3">Task Three</label>
+          </li>
+        </ul>
+      </div>
     </section>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
