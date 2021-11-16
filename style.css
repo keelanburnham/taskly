@@ -6,13 +6,17 @@ body {
   background-color: whitesmoke;
 }
 
-nav {
+header {
   margin: 1.5rem auto;
   text-align: center;
   font-size: 36px;
 }
 
 /* classes */
+.task input:checked ~ .task-text {
+  text-decoration: line-through;
+}
+
 .task-input-box {
   background-color: white;
   border-radius: 10px;

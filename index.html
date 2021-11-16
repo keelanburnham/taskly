@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <header>
       <span class="title">✔️ Taskly</span>
-    </nav>
+    </header>
     <section class="input-area">
       <div class="task-input-box">
         <div class="task-input-innerbox">
@@ -35,23 +35,21 @@
       </div>
     </section>
     <section class="task-list-area mt-2">
-      <div class="">
-        <ul class="task-list p-1">
-          <li class="task">
-            <input type="checkbox" name="task-1" id="task-1" />
-            <label for="task-1">Task One</label>
-          </li>
-          <li class="task">
-            <input type="checkbox" name="task-2" id="task-2" />
-            <label for="task-2">Task Two</label>
-          </li>
-          <li class="task">
-            <input type="checkbox" name="task-3" id="task-3" />
-            <label for="task-3">Task Three</label>
-          </li>
-        </ul>
-      </div>
+      <ul class="task-list p-1">
+        <li class="task">
+          <input type="checkbox" name="task-1" id="task-1" />
+          <label for="task-1" class="task-text">Task One</label>
+        </li>
+        <li class="task">
+          <input type="checkbox" name="task-2" id="task-2" />
+          <label for="task-2" class="task-text">Task Two</label>
+        </li>
+        <li class="task">
+          <input type="checkbox" name="task-3" id="task-3" />
+          <label for="task-3" class="task-text">Task Three</label>
+        </li>
+      </ul>
     </section>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
