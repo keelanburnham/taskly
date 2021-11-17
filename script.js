@@ -22,7 +22,7 @@ const UpdateTaskList = function (tasks) {
     const html = `
     <li class="task">
       <input type="checkbox" name="task-${index + 1}" id="task-${index + 1}" />
-      <label for="task-${index + 1}" class="task-text">${task}</label>
+      <label for="task-${index + 1}">${task}</label>
     </li>
     `;
     containerTaskList.insertAdjacentHTML('afterbegin', html);

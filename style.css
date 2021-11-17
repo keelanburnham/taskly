@@ -13,7 +13,7 @@ header {
 }
 
 /* classes */
-.task input:checked ~ .task-text {
+.task input:checked ~ label {
   text-decoration: line-through;
 }
 
@@ -65,4 +65,32 @@ header {
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+/* dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #282c34;
+    color: #abb2bf;
+  }
+
+  #taskInput {
+    color: #abb2bf;
+  }
+
+  .task-input-box,
+  .task-list,
+  .task-input-textbox,
+  .task {
+    background-color: #434957;
+  }
+
+  .task-input-box {
+    box-shadow: 5px 5px 5px #21252b;
+  }
+
+  .task input:checked ~ label {
+    text-decoration: line-through;
+    color: #5c6370;
+  }
 }
